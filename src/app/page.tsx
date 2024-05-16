@@ -76,7 +76,7 @@ function Card({ api }: { api: API }) {
               <div className="text-[0.8rem] w-full h-min flex gap-2 items-center whitespace-nowrap">
                 Supported browser
                 <div className="flex gap-2 items-center">
-                  {(api.supportedBrowsers.includes('chrome')) && <BrowserChrome theme='filled' size="20" fill="#333" strokeWidth={3} />}
+                  {(api.supportedBrowsers.includes('chrome') || api.supportedBrowsers.includes('chrome-android')) && <BrowserChrome theme='filled' size="20" fill="#333" strokeWidth={3} />}
                   {(api.supportedBrowsers.includes("safari")) && <BrowserSafari theme='filled' size="20" fill="#333" strokeWidth={3} />}
                 </div>
               </div>

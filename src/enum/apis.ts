@@ -845,9 +845,11 @@ export const APIs: API[] = [
         name: 'Vibration API',
         description: `Most modern mobile devices include vibration hardware, which lets software code provide physical feedback to the user by causing the device to shake. The Vibration API offers Web apps the ability to access this hardware, if it exists, and does nothing if the device doesn't support it.`,
         experimental: false,
-        tested: false,
+        tested: true,
         url: '/test/viberation-api',
-        mdnSource: 'https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API'
+        mdnSource: 'https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API',
+        supportedPlatforms: ['android'],
+        supportedBrowsers: ['chrome-android']
     },
     {
         name: 'View Transitions API',
