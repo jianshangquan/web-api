@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import '@icon-park/react/styles/index.css';
 import ClientProvider from "./client";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className={`overflow-hidden ${productSans.className}`}>
         <ClientProvider>
           {children}
+          <Analytics />
         </ClientProvider>
       </body>
     </html>
