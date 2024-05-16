@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import '@icon-park/react/styles/index.css';
+import ClientProvider from "./client";
 
 
 
@@ -46,7 +48,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="overflow-hidden">{children}</body>
+      <body className={`overflow-hidden ${productSans.className}`}>
+        <ClientProvider>
+          {children}
+        </ClientProvider>
+      </body>
     </html>
   );
 }

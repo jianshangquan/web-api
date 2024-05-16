@@ -1,0 +1,1 @@
+export const DefaultButtonStyle: string = 'px-2 py-1 rounded-full text-[0.8rem] transition-all duration-300 bg-black/10 active:bg-black/5';
